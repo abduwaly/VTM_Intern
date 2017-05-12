@@ -1,0 +1,2 @@
+2017-05-11 15:03:02,465 ERROR [main] [org.hibernate.engine.jdbc.spi.SqlExceptionHelper]:131 - (conn:31) Table 'vtm.tab_user' doesn't exist
+Query is: select count(*) as col_0_0_ from tab_user user0_

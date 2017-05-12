@@ -1,0 +1,4 @@
+2017-05-09 15:07:06,800 DEBUG [main] [aboo.controller.UserController]:27 - 初始化完成，map里存了两个User
+2017-05-09 15:07:14,281 DEBUG [qtp956061012-13] [aboo.controller.UserController]:53 - 所有User： {1=User{empNo='1', empName='aaa', accountNo='123', department='vtm', tel='123456789', email='aaa@xx.com', password='000000'}, 2=User{empNo='2', empName='bbb', accountNo='456', department='prd', tel='123456789', email='bbb@xx.com', password='000000'}}
+2017-05-09 15:07:37,188 DEBUG [qtp956061012-15] [aboo.controller.GreetingController]:26 - -----------打出这一行说明：我的logback会用了！！！----------------
+2017-05-09 15:07:47,683 DEBUG [qtp956061012-12] [aboo.controller.GreetingController]:37 - 传过来的proId:493

@@ -1,0 +1,38 @@
+2017-05-09 11:00:05,799 DEBUG [qtp426052262-12] [aboo.controller.AllExceptionHandler]:40 - --------------415---------
+2017-05-09 11:11:27,820 DEBUG [main] [aboo.controller.UserController]:28 - 初始化完成，map里存了两个User
+2017-05-09 11:13:24,839 DEBUG [main] [aboo.controller.UserController]:28 - 初始化完成，map里存了两个User
+2017-05-09 11:13:38,106 DEBUG [qtp2130606983-13] [aboo.controller.AllExceptionHandler]:40 - --------------415---------
+2017-05-09 11:13:38,109 DEBUG [qtp2130606983-13] [aboo.controller.AllExceptionHandler]:42 - Content type 'application/xml;charset=UTF-8' not supported
+2017-05-09 11:13:38,110 DEBUG [qtp2130606983-13] [aboo.controller.AllExceptionHandler]:43 - Content type 'application/xml;charset=UTF-8' not supported
+2017-05-09 11:13:38,111 DEBUG [qtp2130606983-13] [aboo.controller.AllExceptionHandler]:44 - org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/xml;charset=UTF-8' not supported
+2017-05-09 11:15:58,186 DEBUG [qtp2130606983-18] [aboo.controller.UserController]:54 - 所有User： {1=User{empNo='1', empName='aaa', accountNo='123', department='vtm', tel='123456789', email='aaa@xx.com', password='000000'}, 2=User{empNo='2', empName='bbb', accountNo='456', department='prd', tel='123456789', email='bbb@xx.com', password='000000'}}
+2017-05-09 11:16:14,188 DEBUG [qtp2130606983-13] [aboo.controller.AllExceptionHandler]:40 - --------------415---------
+2017-05-09 11:16:14,189 DEBUG [qtp2130606983-13] [aboo.controller.AllExceptionHandler]:42 - Could not read document: Unrecognized token 'nujhhgjll': was expecting 'null', 'true', 'false' or NaN
+ at [Source: java.io.PushbackInputStream@571f59f5; line: 7, column: 20]; nested exception is com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'nujhhgjll': was expecting 'null', 'true', 'false' or NaN
+ at [Source: java.io.PushbackInputStream@571f59f5; line: 7, column: 20]
+2017-05-09 11:16:14,189 DEBUG [qtp2130606983-13] [aboo.controller.AllExceptionHandler]:43 - Could not read document: Unrecognized token 'nujhhgjll': was expecting 'null', 'true', 'false' or NaN
+ at [Source: java.io.PushbackInputStream@571f59f5; line: 7, column: 20]; nested exception is com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'nujhhgjll': was expecting 'null', 'true', 'false' or NaN
+ at [Source: java.io.PushbackInputStream@571f59f5; line: 7, column: 20]
+2017-05-09 11:16:14,190 DEBUG [qtp2130606983-13] [aboo.controller.AllExceptionHandler]:44 - org.springframework.http.converter.HttpMessageNotReadableException: Could not read document: Unrecognized token 'nujhhgjll': was expecting 'null', 'true', 'false' or NaN
+ at [Source: java.io.PushbackInputStream@571f59f5; line: 7, column: 20]; nested exception is com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'nujhhgjll': was expecting 'null', 'true', 'false' or NaN
+ at [Source: java.io.PushbackInputStream@571f59f5; line: 7, column: 20]
+2017-05-09 11:16:14,192 DEBUG [qtp2130606983-13] [aboo.controller.AllExceptionHandler]:45 - com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'nujhhgjll': was expecting 'null', 'true', 'false' or NaN
+ at [Source: java.io.PushbackInputStream@571f59f5; line: 7, column: 20]
+2017-05-09 11:16:14,193 DEBUG [qtp2130606983-13] [aboo.controller.AllExceptionHandler]:46 - [Ljava.lang.StackTraceElement;@247f60d1
+2017-05-09 11:16:14,194 DEBUG [qtp2130606983-13] [aboo.controller.AllExceptionHandler]:48 - ----------end----------------
+2017-05-09 11:29:59,240 DEBUG [main] [aboo.controller.UserController]:28 - 初始化完成，map里存了两个User
+2017-05-09 11:30:22,791 DEBUG [qtp1638001196-12] [aboo.controller.AllExceptionHandler]:41 - --------------415---------
+2017-05-09 11:30:22,793 DEBUG [qtp1638001196-12] [aboo.controller.AllExceptionHandler]:42 - >>>415:Could not read document: Unrecognized token 'nujhhgjll': was expecting 'null', 'true', 'false' or NaN
+ at [Source: java.io.PushbackInputStream@2637b96f; line: 7, column: 20]; nested exception is com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'nujhhgjll': was expecting 'null', 'true', 'false' or NaN
+ at [Source: java.io.PushbackInputStream@2637b96f; line: 7, column: 20]<<<
+2017-05-09 11:30:55,273 DEBUG [qtp1638001196-16] [aboo.controller.AllExceptionHandler]:41 - --------------415---------
+2017-05-09 11:30:55,274 DEBUG [qtp1638001196-16] [aboo.controller.AllExceptionHandler]:42 - >>>415:Request method 'DELETE' not supported<<<
+2017-05-09 11:31:15,386 DEBUG [qtp1638001196-18] [aboo.controller.AllExceptionHandler]:41 - --------------415---------
+2017-05-09 11:31:15,386 DEBUG [qtp1638001196-18] [aboo.controller.AllExceptionHandler]:42 - >>>415:Request method 'PATCH' not supported<<<
+2017-05-09 11:31:20,622 DEBUG [qtp1638001196-19] [aboo.controller.AllExceptionHandler]:41 - --------------415---------
+2017-05-09 11:31:20,622 DEBUG [qtp1638001196-19] [aboo.controller.AllExceptionHandler]:42 - >>>415:Request method 'GET' not supported<<<
+2017-05-09 11:31:33,541 DEBUG [qtp1638001196-13] [aboo.controller.UserController]:110 - --------404!!!--------
+2017-05-09 11:34:36,962 DEBUG [main] [aboo.controller.UserController]:28 - 初始化完成，map里存了两个User
+2017-05-09 11:36:04,221 DEBUG [main] [aboo.controller.UserController]:28 - 初始化完成，map里存了两个User
+2017-05-09 11:44:03,756 DEBUG [main] [aboo.controller.UserController]:28 - 初始化完成，map里存了两个User
+2017-05-09 11:45:07,197 DEBUG [main] [aboo.controller.UserController]:28 - 初始化完成，map里存了两个User

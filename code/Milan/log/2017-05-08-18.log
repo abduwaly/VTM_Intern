@@ -1,0 +1,7 @@
+2017-05-08 18:31:42,179 DEBUG [main] [aboo.controller.UserController]:28 - 初始化完成，map里存了两个User
+2017-05-08 18:31:51,190 DEBUG [qtp1380593659-15] [aboo.controller.UserController]:54 - 所有User： {1=User{empNo='1', empName='aaa', accountNo='123', department='vtm', tel='123456789', email='aaa@xx.com', password='000000'}, 2=User{empNo='2', empName='bbb', accountNo='456', department='prd', tel='123456789', email='bbb@xx.com', password='000000'}}
+2017-05-08 18:31:57,729 DEBUG [qtp1380593659-16] [aboo.controller.UserController]:112 - --------404!!!--------
+2017-05-08 18:33:31,012 DEBUG [qtp1380593659-13] [aboo.controller.UserController]:112 - --------404!!!--------
+2017-05-08 18:33:39,953 DEBUG [qtp1380593659-17] [aboo.controller.UserController]:112 - --------404!!!--------
+2017-05-08 18:38:03,102 DEBUG [main] [aboo.controller.UserController]:28 - 初始化完成，map里存了两个User
+2017-05-08 18:38:12,362 DEBUG [qtp874111547-18] [aboo.controller.UserController]:112 - --------404!!!--------

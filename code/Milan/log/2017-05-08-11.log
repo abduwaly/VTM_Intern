@@ -1,0 +1,52 @@
+2017-05-08 11:00:46,969 DEBUG [main] [aboo.controller.UserController]:29 - 初始化完成，map里存了两个User
+2017-05-08 11:01:39,526 DEBUG [qtp1842881670-14] [aboo.controller.UserController]:53 - {1=User{empNo='1', empName='aaa'}, 2=User{empNo='2', empName='bbb'}}
+2017-05-08 11:04:03,343 DEBUG [qtp1842881670-19] [aboo.controller.UserController]:53 - {1=User{empNo='1', empName='aaa'}, 2=User{empNo='2', empName='bbb'}}
+2017-05-08 11:12:40,644 DEBUG [main] [aboo.controller.UserController]:29 - 初始化完成，map里存了两个User
+2017-05-08 11:13:53,711 DEBUG [main] [aboo.controller.UserController]:29 - 初始化完成，map里存了两个User
+2017-05-08 11:15:06,253 DEBUG [qtp225753796-16] [aboo.controller.UserController]:66 - 新添加的User：User{empNo='546', empName='aaa'}
+2017-05-08 11:15:06,254 DEBUG [qtp225753796-16] [aboo.controller.UserController]:53 - {1=User{empNo='1', empName='aaa'}, 2=User{empNo='2', empName='bbb'}, 546=User{empNo='546', empName='aaa'}}
+2017-05-08 11:15:46,777 DEBUG [qtp225753796-12] [aboo.controller.UserController]:66 - 新添加的User：User{empNo='586', empName='aaa'}
+2017-05-08 11:15:46,778 DEBUG [qtp225753796-12] [aboo.controller.UserController]:53 - {1=User{empNo='1', empName='aaa'}, 2=User{empNo='2', empName='bbb'}, 586=User{empNo='586', empName='aaa'}, 546=User{empNo='546', empName='aaa'}}
+2017-05-08 11:24:07,597 DEBUG [main] [aboo.controller.UserController]:29 - 初始化完成，map里存了两个User
+2017-05-08 11:24:35,081 DEBUG [qtp468950278-16] [aboo.controller.UserController]:55 - {1=User{empNo='1', empName='aaa'}, 2=User{empNo='2', empName='bbb'}}
+2017-05-08 11:24:50,717 DEBUG [qtp468950278-13] [aboo.controller.UserController]:69 - 新添加的User：User{empNo='86', empName='aaa'}
+2017-05-08 11:24:50,718 DEBUG [qtp468950278-13] [aboo.controller.UserController]:55 - {1=User{empNo='1', empName='aaa'}, 2=User{empNo='2', empName='bbb'}, 86=User{empNo='86', empName='aaa'}}
+2017-05-08 11:25:00,533 DEBUG [qtp468950278-17] [aboo.controller.UserController]:69 - 新添加的User：User{empNo='77', empName='aaa'}
+2017-05-08 11:25:00,534 DEBUG [qtp468950278-17] [aboo.controller.UserController]:55 - {77=User{empNo='77', empName='aaa'}, 1=User{empNo='1', empName='aaa'}, 2=User{empNo='2', empName='bbb'}, 86=User{empNo='86', empName='aaa'}}
+2017-05-08 11:28:30,243 DEBUG [main] [aboo.controller.UserController]:29 - 初始化完成，map里存了两个User
+2017-05-08 11:28:56,483 DEBUG [qtp557593923-17] [aboo.controller.UserController]:55 - {1=User{empNo='1', empName='aaa'}, 2=User{empNo='2', empName='bbb'}}
+2017-05-08 11:29:03,568 DEBUG [qtp557593923-15] [aboo.controller.UserController]:69 - 新添加的User：User{empNo='77', empName='aaa'}
+2017-05-08 11:29:03,568 DEBUG [qtp557593923-15] [aboo.controller.UserController]:55 - {77=User{empNo='77', empName='aaa'}, 1=User{empNo='1', empName='aaa'}, 2=User{empNo='2', empName='bbb'}}
+2017-05-08 11:29:09,504 DEBUG [qtp557593923-19] [aboo.controller.UserController]:69 - 新添加的User：User{empNo='77', empName='aaa'}
+2017-05-08 11:29:09,505 DEBUG [qtp557593923-19] [aboo.controller.UserController]:55 - {77=User{empNo='77', empName='aaa'}, 1=User{empNo='1', empName='aaa'}, 2=User{empNo='2', empName='bbb'}}
+2017-05-08 11:29:16,337 DEBUG [qtp557593923-17] [aboo.controller.UserController]:69 - 新添加的User：User{empNo='75', empName='aaa'}
+2017-05-08 11:29:16,337 DEBUG [qtp557593923-17] [aboo.controller.UserController]:55 - {77=User{empNo='77', empName='aaa'}, 1=User{empNo='1', empName='aaa'}, 2=User{empNo='2', empName='bbb'}, 75=User{empNo='75', empName='aaa'}}
+2017-05-08 11:29:31,964 DEBUG [qtp557593923-15] [aboo.controller.UserController]:84 - 删除empNO:77的User
+2017-05-08 11:29:31,964 DEBUG [qtp557593923-15] [aboo.controller.UserController]:55 - {1=User{empNo='1', empName='aaa'}, 2=User{empNo='2', empName='bbb'}, 75=User{empNo='75', empName='aaa'}}
+2017-05-08 11:29:38,244 DEBUG [qtp557593923-13] [aboo.controller.UserController]:84 - 删除empNO:1的User
+2017-05-08 11:29:38,245 DEBUG [qtp557593923-13] [aboo.controller.UserController]:55 - {2=User{empNo='2', empName='bbb'}, 75=User{empNo='75', empName='aaa'}}
+2017-05-08 11:38:39,317 DEBUG [main] [aboo.controller.UserController]:29 - 初始化完成，map里存了两个User
+2017-05-08 11:39:10,080 DEBUG [qtp2079051109-12] [aboo.controller.UserController]:55 - 所有User： {1=User{empNo='1', empName='aaa'}, 2=User{empNo='2', empName='bbb'}}
+2017-05-08 11:39:20,852 DEBUG [qtp2079051109-19] [aboo.controller.UserController]:69 - 新添加的User：User{empNo='75', empName='aaa'}
+2017-05-08 11:39:20,853 DEBUG [qtp2079051109-19] [aboo.controller.UserController]:55 - 所有User： {1=User{empNo='1', empName='aaa'}, 2=User{empNo='2', empName='bbb'}, 75=User{empNo='75', empName='aaa'}}
+2017-05-08 11:39:25,212 DEBUG [qtp2079051109-16] [aboo.controller.UserController]:69 - 新添加的User：User{empNo='885', empName='aaa'}
+2017-05-08 11:39:25,213 DEBUG [qtp2079051109-16] [aboo.controller.UserController]:55 - 所有User： {1=User{empNo='1', empName='aaa'}, 2=User{empNo='2', empName='bbb'}, 885=User{empNo='885', empName='aaa'}, 75=User{empNo='75', empName='aaa'}}
+2017-05-08 11:39:28,762 DEBUG [qtp2079051109-12] [aboo.controller.UserController]:69 - 新添加的User：User{empNo='89', empName='aaa'}
+2017-05-08 11:39:28,763 DEBUG [qtp2079051109-12] [aboo.controller.UserController]:55 - 所有User： {1=User{empNo='1', empName='aaa'}, 89=User{empNo='89', empName='aaa'}, 2=User{empNo='2', empName='bbb'}, 885=User{empNo='885', empName='aaa'}, 75=User{empNo='75', empName='aaa'}}
+2017-05-08 11:39:51,297 DEBUG [qtp2079051109-18] [aboo.controller.UserController]:84 - 删除empNO:1的User
+2017-05-08 11:39:51,298 DEBUG [qtp2079051109-18] [aboo.controller.UserController]:55 - 所有User： {89=User{empNo='89', empName='aaa'}, 2=User{empNo='2', empName='bbb'}, 885=User{empNo='885', empName='aaa'}, 75=User{empNo='75', empName='aaa'}}
+2017-05-08 11:39:54,777 DEBUG [qtp2079051109-17] [aboo.controller.UserController]:84 - 删除empNO:2的User
+2017-05-08 11:39:54,778 DEBUG [qtp2079051109-17] [aboo.controller.UserController]:55 - 所有User： {89=User{empNo='89', empName='aaa'}, 885=User{empNo='885', empName='aaa'}, 75=User{empNo='75', empName='aaa'}}
+2017-05-08 11:40:26,473 DEBUG [qtp2079051109-19] [aboo.controller.UserController]:101 - 成功更新了empNo=89的User信息
+2017-05-08 11:40:26,473 DEBUG [qtp2079051109-19] [aboo.controller.UserController]:55 - 所有User： {89=User{empNo='89', empName='bbb'}, 885=User{empNo='885', empName='aaa'}, 75=User{empNo='75', empName='aaa'}}
+2017-05-08 11:40:36,023 DEBUG [qtp2079051109-12] [aboo.controller.UserController]:101 - 成功更新了empNo=89的User信息
+2017-05-08 11:40:36,024 DEBUG [qtp2079051109-12] [aboo.controller.UserController]:55 - 所有User： {89=User{empNo='89', empName='bgfhfgagdgf'}, 885=User{empNo='885', empName='aaa'}, 75=User{empNo='75', empName='aaa'}}
+2017-05-08 11:55:48,139 DEBUG [main] [aboo.controller.UserController]:27 - 初始化完成，map里存了两个User
+2017-05-08 11:56:15,289 DEBUG [qtp783882192-16] [aboo.controller.UserController]:53 - 所有User： {1=User{empNo='1', empName='aaa', accountNo='123', department='vtm', tel='123456789', email='aaa@xx.com', password='000000'}, 2=User{empNo='2', empName='bbb', accountNo='456', department='prd', tel='123456789', email='bbb@xx.com', password='000000'}}
+2017-05-08 11:56:40,396 DEBUG [qtp783882192-13] [aboo.controller.UserController]:40 - 查看empNo:2的用户
+2017-05-08 11:57:28,812 DEBUG [qtp783882192-18] [aboo.controller.UserController]:67 - 新添加的User：User{empNo='3', empName='ccc', accountNo='789', department='bigdata', tel='12356476789', email='ccc@xx.com', password='000000'}
+2017-05-08 11:57:28,813 DEBUG [qtp783882192-18] [aboo.controller.UserController]:53 - 所有User： {1=User{empNo='1', empName='aaa', accountNo='123', department='vtm', tel='123456789', email='aaa@xx.com', password='000000'}, 2=User{empNo='2', empName='bbb', accountNo='456', department='prd', tel='123456789', email='bbb@xx.com', password='000000'}, 3=User{empNo='3', empName='ccc', accountNo='789', department='bigdata', tel='12356476789', email='ccc@xx.com', password='000000'}}
+2017-05-08 11:57:48,839 DEBUG [qtp783882192-19] [aboo.controller.UserController]:82 - 删除empNO:1的User
+2017-05-08 11:57:48,839 DEBUG [qtp783882192-19] [aboo.controller.UserController]:53 - 所有User： {2=User{empNo='2', empName='bbb', accountNo='456', department='prd', tel='123456789', email='bbb@xx.com', password='000000'}, 3=User{empNo='3', empName='ccc', accountNo='789', department='bigdata', tel='12356476789', email='ccc@xx.com', password='000000'}}
+2017-05-08 11:58:28,465 DEBUG [qtp783882192-17] [aboo.controller.UserController]:99 - 成功更新了empNo=3的User信息
+2017-05-08 11:58:28,466 DEBUG [qtp783882192-17] [aboo.controller.UserController]:53 - 所有User： {2=User{empNo='2', empName='bbb', accountNo='456', department='prd', tel='123456789', email='bbb@xx.com', password='000000'}, 3=User{empNo='3', empName='ccc', accountNo='789', department='ark项目组', tel='12356476789', email='ccc@chinasoft.com', password='000000'}}

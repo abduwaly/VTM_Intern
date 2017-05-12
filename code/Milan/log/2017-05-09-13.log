@@ -1,0 +1,2 @@
+2017-05-09 13:12:20,636 DEBUG [main] [aboo.controller.UserController]:27 - 初始化完成，map里存了两个User
+2017-05-09 13:12:41,485 DEBUG [qtp1618099562-13] [aboo.controller.UserController]:53 - 所有User： {1=User{empNo='1', empName='aaa', accountNo='123', department='vtm', tel='123456789', email='aaa@xx.com', password='000000'}, 2=User{empNo='2', empName='bbb', accountNo='456', department='prd', tel='123456789', email='bbb@xx.com', password='000000'}}

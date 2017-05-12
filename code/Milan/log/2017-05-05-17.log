@@ -1,0 +1,4 @@
+2017-05-05 17:26:53,840 DEBUG [qtp481792876-13] [aboo.controller.GreetingController]:26 - -----------打出这一行说明：我的logger成功了！！！----------------
+2017-05-05 17:31:34,027 DEBUG [qtp732688777-15] [aboo.controller.GreetingController]:26 - -----------打出这一行说明：我的logback会用了！！！----------------
+2017-05-05 17:31:58,279 DEBUG [qtp732688777-16] [aboo.controller.GreetingController]:37 - 传过来的proId:90897678
+2017-05-05 17:58:49,236 DEBUG [qtp732688777-12] [aboo.controller.GreetingController]:26 - -----------打出这一行说明：我的logback会用了！！！----------------

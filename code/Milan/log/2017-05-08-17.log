@@ -1,0 +1,10 @@
+2017-05-08 17:03:01,199 DEBUG [main] [aboo.controller.UserController]:27 - 初始化完成，map里存了两个User
+2017-05-08 17:03:22,848 DEBUG [qtp1502616653-12] [aboo.controller.UserController]:53 - 所有User： {1=User{empNo='1', empName='aaa', accountNo='123', department='vtm', tel='123456789', email='aaa@xx.com', password='000000'}, 2=User{empNo='2', empName='bbb', accountNo='456', department='prd', tel='123456789', email='bbb@xx.com', password='000000'}}
+2017-05-08 17:10:05,935 DEBUG [main] [aboo.controller.UserController]:27 - 初始化完成，map里存了两个User
+2017-05-08 17:51:30,051 DEBUG [main] [aboo.controller.UserController]:27 - 初始化完成，map里存了两个User
+2017-05-08 17:53:20,433 DEBUG [main] [aboo.controller.UserController]:27 - 初始化完成，map里存了两个User
+2017-05-08 17:54:12,037 DEBUG [main] [aboo.controller.UserController]:27 - 初始化完成，map里存了两个User
+2017-05-08 17:56:57,526 DEBUG [main] [aboo.controller.UserController]:27 - 初始化完成，map里存了两个User
+2017-05-08 17:57:27,822 DEBUG [qtp1763872389-19] [aboo.controller.UserController]:67 - 新添加的User：User{empNo='29', empName='ccc', accountNo='789', department='flsjdifddjlfdifjdlfjdl', tel='null', email='null', password='null'}
+2017-05-08 17:57:27,825 DEBUG [qtp1763872389-19] [aboo.controller.UserController]:53 - 所有User： {1=User{empNo='1', empName='aaa', accountNo='123', department='vtm', tel='123456789', email='aaa@xx.com', password='000000'}, 2=User{empNo='2', empName='bbb', accountNo='456', department='prd', tel='123456789', email='bbb@xx.com', password='000000'}, 29=User{empNo='29', empName='ccc', accountNo='789', department='flsjdifddjlfdifjdlfjdl', tel='null', email='null', password='null'}}
+2017-05-08 17:57:37,795 DEBUG [qtp1763872389-17] [aboo.controller.UserController]:53 - 所有User： {1=User{empNo='1', empName='aaa', accountNo='123', department='vtm', tel='123456789', email='aaa@xx.com', password='000000'}, 2=User{empNo='2', empName='bbb', accountNo='456', department='prd', tel='123456789', email='bbb@xx.com', password='000000'}, 29=User{empNo='29', empName='ccc', accountNo='789', department='flsjdifddjlfdifjdlfjdl', tel='null', email='null', password='null'}}
