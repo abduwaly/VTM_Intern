@@ -101,13 +101,7 @@ public class UserController {
         }
         return users();
     }
-//
-//    @ResponseBody
-//    @RequestMapping(value = "/404")
-//    public ExAndErr error_404(){
-//
-//        log.debug("--------404!!!--------");
-//        return new ExAndErr(404,"");
-//    }
+
+
 
 }

@@ -29,19 +29,19 @@ public class AllExceptionHandler {
         return new ExAndErr(HttpStatus.INTERNAL_SERVER_ERROR.value(),ex.getMessage());
     }
 
-    @ExceptionHandler(Exception.class)
-    @ResponseStatus(value = HttpStatus.UNSUPPORTED_MEDIA_TYPE)
-    @ResponseBody
-    public ExAndErr err_415(Exception ex){
-
-        Integer code = HttpStatus.UNSUPPORTED_MEDIA_TYPE.value();
-        String msg = ex.getMessage();
-
-        log.debug("--------------415---------");
-        log.debug(">>>"+code+"======"+HttpStatus.UNSUPPORTED_MEDIA_TYPE.getReasonPhrase()+"======"+msg+"<<<");
-
-        return new ExAndErr(code,msg);
-    }
+//    @ExceptionHandler(Exception.class)
+//    @ResponseStatus(value = HttpStatus.UNSUPPORTED_MEDIA_TYPE)
+//    @ResponseBody
+//    public ExAndErr err_415(Exception ex){
+//
+//        Integer code = HttpStatus.UNSUPPORTED_MEDIA_TYPE.value();
+//        String msg = ex.getMessage();
+//
+//        log.debug("--------------415---------");
+//        log.debug(">>>"+code+"======"+HttpStatus.UNSUPPORTED_MEDIA_TYPE.getReasonPhrase()+"======"+msg+"<<<");
+//
+//        return new ExAndErr(code,msg);
+//    }
 
 //    @ExceptionHandler(SystemException.class)
 //    @ResponseStatus(value = HttpStatus.METHOD_NOT_ALLOWED)

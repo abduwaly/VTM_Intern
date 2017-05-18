@@ -1,0 +1,2 @@
+2017-05-16 14:27:47,031 ERROR [main] [org.hibernate.engine.jdbc.spi.SqlExceptionHelper]:131 - (conn:209) Unknown column 'filename' in 'field list'
+Query is: insert into tab_file (filename, lastModified, length, type, id) values (?, ?, ?, ?, ?), parameters ['all_logs',877689,497676,'doc',54]

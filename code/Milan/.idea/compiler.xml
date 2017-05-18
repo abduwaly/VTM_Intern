@@ -6,10 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Camp" />
         <module name="Milan" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Camp" target="1.5" />
+      <module name="Camp_persistent" target="1.5" />
       <module name="Milan" target="1.8" />
     </bytecodeTargetLevel>
   </component>

@@ -1,0 +1,2 @@
+2017-05-15 09:31:17,754 ERROR [main] [org.hibernate.engine.jdbc.spi.SqlExceptionHelper]:131 - (conn:3) Duplicate entry '2' for key 'PRIMARY'
+Query is: insert into tab_user (empName, empNo, id) values (?, ?, ?), parameters ['messi','10',2]

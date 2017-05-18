@@ -1,0 +1,55 @@
+#version=DEVEL
+# System authorization information
+auth --enableshadow --passalgo=sha512
+# Use network installation
+url --url="http://mirrors.163.com/centos/7.3.1611/os/x86_64"
+# Use graphical install
+graphical
+# Run the Setup Agent on first boot
+firstboot --enable
+ignoredisk --only-use=sda
+# Keyboard layouts
+keyboard --vckeymap=us --xlayouts='us'
+# System language
+lang en_US.UTF-8
+
+# Network information
+network  --bootproto=dhcp --device=eno1 --onboot=off --ipv6=auto --no-activate
+network  --bootproto=dhcp --device=eth0 --ipv6=auto --activate
+network  --hostname=localhost.localdomain
+
+# Root password
+rootpw --iscrypted $6$UvIZm2rj/odi3ZCF$ovYNYrtHlrMFkXOBwiRmjo0ShuBTZRfz/BNM5.sPIDztBowipGF5/U53iy9hnle/VTQsW6.gDgQtq6smdL8yS.
+# System services
+services --disabled="chronyd"
+# System timezone
+timezone Asia/Shanghai --isUtc --nontp
+user --groups=wheel --name=zhangchong --password=$6$kYwg/ZcWCD5hgHBa$NxcZxkDzxYoOZ/gkyITyxl579D/UdohwGHUgz939upp8YRD2rSC7dX9jtIxy7BwtXeqgIUJ538piahc3RsHeT. --iscrypted --gecos="zhangchong"
+# System bootloader configuration
+bootloader --append=" crashkernel=auto" --location=mbr --boot-drive=sda
+# Partition clearing information
+clearpart --all --initlabel --drives=sda
+# Disk partitioning information
+part /boot --fstype="xfs" --ondisk=sda --size=1024
+part pv.249 --fstype="lvmpv" --ondisk=sda --size=952844
+volgroup cl_bogon --pesize=4096 pv.249
+logvol /  --fstype="xfs" --size=358400 --name=root --vgname=cl_bogon
+logvol swap  --fstype="swap" --size=16064 --name=swap --vgname=cl_bogon
+logvol /home  --fstype="xfs" --size=578372 --name=home --vgname=cl_bogon
+
+%packages
+@^minimal
+@core
+kexec-tools
+
+%end
+
+%addon com_redhat_kdump --enable --reserve-mb='auto'
+
+%end
+
+%anaconda
+pwpolicy root --minlen=6 --minquality=50 --notstrict --nochanges --notempty
+pwpolicy user --minlen=6 --minquality=50 --notstrict --nochanges --notempty
+pwpolicy luks --minlen=6 --minquality=50 --notstrict --nochanges --notempty
+%end

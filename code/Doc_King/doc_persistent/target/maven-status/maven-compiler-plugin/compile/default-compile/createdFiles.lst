@@ -1,0 +1,8 @@
+aboo\service\BaseService.class
+aboo\repoImpl\FileRepositoryImpl.class
+aboo\test\SimpleSpringJpaDemo.class
+aboo\service\FileService.class
+aboo\repo\FileRepository.class
+aboo\repo\BaseRepository.class
+aboo\bean\FileInfo.class
+aboo\service\FileServiceImpl.class

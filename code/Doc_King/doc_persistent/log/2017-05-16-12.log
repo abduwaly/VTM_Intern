@@ -1,0 +1,6 @@
+2017-05-16 12:10:45,044 ERROR [main] [org.hibernate.engine.jdbc.spi.SqlExceptionHelper]:131 - (conn:190) Unknown column 'fileName' in 'field list'
+Query is: insert into tab_file (fileName, lastModified, length, type, id) values (?, ?, ?, ?, ?), parameters ['all_logs',877689,49767684,'doc',49]
+2017-05-16 12:13:19,432 ERROR [main] [org.hibernate.engine.jdbc.spi.SqlExceptionHelper]:131 - (conn:193) Unknown column 'fileName' in 'field list'
+Query is: insert into tab_file (fileName, lastModified, length, type, id) values (?, ?, ?, ?, ?), parameters ['all_logs',877689,497676,'doc',50]
+2017-05-16 12:16:10,218 ERROR [main] [org.hibernate.engine.jdbc.spi.SqlExceptionHelper]:131 - (conn:196) Unknown column 'fileName' in 'field list'
+Query is: insert into tab_file (fileName, lastModified, length, type, id) values (?, ?, ?, ?, ?), parameters ['all_logs',877689,497676,'doc',51]

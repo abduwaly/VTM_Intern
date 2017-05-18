@@ -1,0 +1,9 @@
+aboo\service\BaseService.class
+aboo\test\SimpleSpringJpaDemo.class
+aboo\dao\EntityMamagerCreater.class
+aboo\service\UserServiceImpl.class
+aboo\repo\BaseRepository.class
+aboo\repoImpl\UserRepositoryImpl.class
+aboo\bean\User.class
+aboo\service\UserService.class
+aboo\repo\UserRepository.class
