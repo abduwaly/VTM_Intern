@@ -16,16 +16,9 @@ public class FileJPATest {
 //        System.out.println(fs.getClass());
 //        FileRepository fr = ctx.getBean("fileRepositoryImpl", FileRepository.class);
 //        fr.save(new FileInfo("all_logs",877689L,"doc",497676L));
-        System.out.println(fs.showAll());
-
-        System.out.println(fs.findByFilename("report"));
-
-        System.out.println(fs.findByLastModified(69));
-
-        System.out.println(fs.findByType("txt"));
-        System.out.println(fs.findByLen(4));
 
 
+        fs.deleteByName("huige");
 
 
     }

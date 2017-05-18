@@ -2,6 +2,7 @@ package aboo.controller;
 
 import aboo.bean.FileInfo;
 import aboo.bean.User;
+import aboo.exception.InvalidFileNameException;
 import aboo.service.FileService;
 import javafx.scene.control.Separator;
 import org.slf4j.Logger;
@@ -65,86 +66,85 @@ public class FileController {
     public String upload(@RequestParam("file") CommonsMultipartFile file,HttpServletRequest request) {
 
 
-        String path = request.getRealPath("/WEB-INF/Files/");
-        log.debug(path);
-        // 判断文件是否存在
+        String path = request.getServletContext().getRealPath("/WEB-INF/Files");
+
         if (!file.isEmpty()) {
-            log.debug("2");
 
             File dir = new File(path);
             if(!dir.exists()){   dir.mkdirs();}
 
-            File localFile = new File(path+File.separator+file.getName());
+            String originalName = file.getOriginalFilename();
+
+            File localFile = new File(path+File.separator+originalName);
+
+            //如果与已有文件冲突，将覆盖他
+            if(fs.existFile(originalName)){
+                fs.deleteByName(originalName);
+            }
+
             try {
                 file.transferTo(localFile);
-                log.debug("保存成功："+localFile);
+                //持久化文件数据
+                fs.saveInfo(originalName,System.currentTimeMillis(),file.getSize());
 
-                return "upload_dir："+localFile;
+                log.debug("upload success ："+localFile);
+                return "upload_dir:"+localFile;
+
             } catch (IllegalStateException | IOException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
+                new Error("occured exception while transfering to local file",e);
+                //e.printStackTrace();
             }
+        }else{
+            throw new Error("Empty file is rejected!");
         }
 
        return "upload faild!!!";
     }
 
-//    @RequestMapping(value = "/download/{filename}",method = RequestMethod.GET)
-//    public String download(@PathVariable String filename, HttpServletRequest request, HttpServletResponse response){
-//
-//
-//        if (filename != null) {
-//            String realPath = request.getServletContext().getRealPath("WEB-INF/Files/");
-//            File file = new File(realPath, filename);
-//            log.debug("0");
-//
-//            if (file.exists()) {
-//
-//                log.debug("1");
-//
-//                response.setContentType("application/force-download");// 设置强制下载不打开
-//                response.addHeader("Content-Disposition",
-//                        "attachment;file=" + filename);// 设置文件名
-//                byte[] buffer = new byte[1024];
-//                FileInputStream fis = null;
-//                BufferedInputStream bis = null;
-//                try {
-//                    fis = new FileInputStream(file);
-//                    bis = new BufferedInputStream(fis);
-//                    OutputStream os = response.getOutputStream();
-//                    int i = bis.read(buffer);
-//                    while (i != -1) {
-//                        os.write(buffer, 0, i);
-//                        i = bis.read(buffer);
-//                    }
-//                    log.debug("2");
-//
-//                } catch (Exception e) {
-//                    // TODO: handle exception
-//                    e.printStackTrace();
-//                } finally {
-//                    if (bis != null) {
-//                        try {
-//                            bis.close();
-//                        } catch (IOException e) {
-//                            // TODO Auto-generated catch block
-//                            e.printStackTrace();
-//                        }
-//                    }
-//                    if (fis != null) {
-//                        try {
-//                            fis.close();
-//                        } catch (IOException e) {
-//                            // TODO Auto-generated catch block
-//                            e.printStackTrace();
-//                        }
-//                    }
-//                }
-//            }
-//        }
-//
-//        return "";
-//    }
+    @RequestMapping(value = "/download/{filename:.+}",method = RequestMethod.GET)
+    public void download(@PathVariable String filename, HttpServletRequest request, HttpServletResponse response) throws InvalidFileNameException, IOException {
+
+        if (filename != null && fs.existFile(filename)) {
+            String realPath = request.getServletContext().getRealPath("WEB-INF/Files/");
+            File file = new File(realPath, filename);
+
+            if (file.exists()) {
+                response.setContentType("application/force-download");// 设置强制下载不打开
+                response.addHeader("Content-Disposition", "attachment;filename=" + filename);// 设置文件名
+                byte[] buffer = new byte[1024];
+                FileInputStream fis = null;
+                BufferedInputStream bis = null;
+                try {
+                    fis = new FileInputStream(file);
+                    bis = new BufferedInputStream(fis);
+                    OutputStream os = response.getOutputStream();
+                    int i = bis.read(buffer);
+                    while (i != -1) {
+                        os.write(buffer, 0, i);
+                        i = bis.read(buffer);
+                    }
+                    os.flush();
+
+                    log.debug(filename+"download succeed!");
+
+                } catch (Exception e) {
+                    throw new Error("download faild!",e);
+                    // e.printStackTrace();
+                } finally {
+                    if (bis != null) {
+                            bis.close();
+                    }
+                    if (fis != null) {
+                            fis.close();
+                    }
+                }
+            }
+        }else{
+            throw new InvalidFileNameException("parameter 'filename' is null or "+filename+"is not exist!");
+        }
+
+        log.debug("download faild!");
+    }
 
 
 

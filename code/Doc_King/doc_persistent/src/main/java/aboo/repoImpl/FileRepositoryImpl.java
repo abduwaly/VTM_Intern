@@ -27,9 +27,18 @@ public class FileRepositoryImpl extends SimpleJpaRepository<FileInfo,Long> imple
     }
 
     @Override
+    public void deleteByName(String filename) {
+        em.createQuery("delete from FileInfo f where f.file_name='"+filename+"'").executeUpdate();
+
+    }
+
+    @Override
     public FileInfo findByFilename(String filename) {
         Query q = em.createQuery("SELECT f FROM FileInfo f WHERE f.file_name='"+filename+"'");
-        return (FileInfo) q.getSingleResult();
+        if(this.existFile(filename)) {
+            return (FileInfo) q.getSingleResult();
+        }
+        return null;
     }
 
     @Override
@@ -48,5 +57,13 @@ public class FileRepositoryImpl extends SimpleJpaRepository<FileInfo,Long> imple
     public List<FileInfo> findByLen(long len) {
         Query q = em.createQuery("SELECT f FROM FileInfo f WHERE f.length='"+len+"'");
         return q.getResultList();
+    }
+
+    @Override
+    public boolean existFile(String filename) {
+        Query q = em.createQuery("SELECT count(f) FROM FileInfo f WHERE f.file_name='"+filename+"'");
+        String count = q.getResultList().get(0).toString();
+        log.debug(count);
+        return "0".equals(count)?false:true;
     }
 }

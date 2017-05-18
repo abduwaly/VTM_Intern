@@ -19,6 +19,20 @@ public class FileServiceImpl implements FileService {
     private FileRepository fr ;
 
     @Override
+    public boolean existFile(String filename) {
+
+        return fr.existFile(filename);
+    }
+
+    @Override
+    public void deleteByName(String filename) {
+        if(fr.existFile(filename)){
+            fr.deleteByName(filename);
+        }
+
+    }
+
+    @Override
     public List<FileInfo> showAll() {
 
         return fr.findAll();
@@ -37,6 +51,15 @@ public class FileServiceImpl implements FileService {
     @Override
     public List<FileInfo> findByType(String type) {
         return fr.findByType(type);
+    }
+
+    @Override
+    public FileInfo saveInfo(String originalName, long lastmodtime, long len) {
+
+        String type = originalName.substring(originalName.lastIndexOf(".")+1);
+        FileInfo fileInfo = new FileInfo(originalName,lastmodtime,type,len);
+        fr.save(fileInfo);
+        return fileInfo;
     }
 
     @Override

@@ -1,0 +1,4 @@
+2017-05-18 12:02:05,545 ERROR [qtp1165568071-16] [org.hibernate.engine.jdbc.spi.SqlExceptionHelper]:131 - (conn:328) Duplicate entry '60' for key 'PRIMARY'
+Query is: insert into tab_file (file_name, last_modified, length, type, id) values (?, ?, ?, ?, ?), parameters ['YK.txt',1495080125435,450168,'txt',60]
+2017-05-18 12:04:08,611 ERROR [qtp389247924-17] [org.hibernate.engine.jdbc.spi.SqlExceptionHelper]:131 - (conn:334) Duplicate entry '61' for key 'PRIMARY'
+Query is: insert into tab_file (file_name, last_modified, length, type, id) values (?, ?, ?, ?, ?), parameters ['foe.doc',1495080248455,108032,'doc',61]

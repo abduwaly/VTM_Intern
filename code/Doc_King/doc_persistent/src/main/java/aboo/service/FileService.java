@@ -21,4 +21,10 @@ public interface FileService extends BaseService {
 
     List<FileInfo> findByLen(long len);
 
+    FileInfo saveInfo(String originalName,long lastmodtime,long len);
+
+    boolean existFile(String filename);
+
+    void deleteByName(String filename);
+
 }

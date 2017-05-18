@@ -15,5 +15,9 @@ public interface FileRepository extends BaseRepository<FileInfo,Long> {
 
     List<FileInfo> findByType(String type);
 
-    List<FileInfo> findByLen(long len);
+    List findByLen(long len);
+
+    boolean existFile(String filename);
+
+    void deleteByName(String filename);
 }
