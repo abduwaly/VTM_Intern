@@ -1,14 +1,18 @@
 # VTM_Intern
-*VTM_Internship Code &amp; Docs
+	
+	* VTM_Internship Code &amp; Docs
 
 ## Introduce
 
 ### Milan
-  SpringMVC Project (Restful),with ExceptionHadler(@ControllerAdvice) test & Validation test (@Valid、@Notnull、@Max、@Min)
+  SpringMVC Project (Restful),with ExceptionHadler(@ControllerAdvice) & Validation(@Valid、@Notnull、@Max、@Min ...)
   
 ### Camp
-  SpringJPA Project (the simplest)
+  A Spring JPA Project (the simplest)
+  
+### doc_persistent
+  Persistent module of Document_Management_System 
   
 ### daily_report
-  A list of things what I've done & learned in a day    [From 20170504]
+  A list of what I've done & learned in a day    [From 20170504]
   
