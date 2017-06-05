@@ -1,0 +1,6 @@
+2017-05-23 11:15:04,471 WARN [main] [org.springframework.web.servlet.PageNotFound]:1136 - No mapping found for HTTP request with URI [/all] in DispatcherServlet with name ''
+2017-05-23 11:16:29,856 WARN [main] [org.springframework.web.servlet.PageNotFound]:1136 - No mapping found for HTTP request with URI [/all] in DispatcherServlet with name ''
+2017-05-23 11:32:21,317 WARN [main] [org.springframework.web.servlet.PageNotFound]:1136 - No mapping found for HTTP request with URI [/all] in DispatcherServlet with name ''
+2017-05-23 11:32:21,363 WARN [main] [org.springframework.web.servlet.PageNotFound]:1136 - No mapping found for HTTP request with URI [/searchByName/man] in DispatcherServlet with name ''
+2017-05-23 11:32:56,517 WARN [main] [org.springframework.web.servlet.PageNotFound]:1136 - No mapping found for HTTP request with URI [/all] in DispatcherServlet with name ''
+2017-05-23 11:32:56,595 WARN [main] [org.springframework.web.servlet.PageNotFound]:1136 - No mapping found for HTTP request with URI [/searchByName/man] in DispatcherServlet with name ''

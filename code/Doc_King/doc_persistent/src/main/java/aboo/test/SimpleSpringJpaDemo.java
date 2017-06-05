@@ -21,7 +21,7 @@ public class SimpleSpringJpaDemo {
         FileService fs = ctx.getBean("fileServiceImpl",FileService.class);
         System.out.println(fs.getClass());
         FileRepository fr = ctx.getBean("fileRepositoryImpl", FileRepository.class);
-        fr.save(new FileInfo("all_logs",877689L,"doc",497676L));
+//        fr.save(new FileInfo("all_logs",877689L,"doc",497676L));
         System.out.println(fr.findAll());
 
         System.out.println(fr.count());

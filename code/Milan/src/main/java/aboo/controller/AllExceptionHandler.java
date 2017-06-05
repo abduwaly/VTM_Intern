@@ -1,34 +1,34 @@
-package aboo.controller;
-
-import aboo.entity.ExAndErr;
-import org.omg.CORBA.SystemException;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.ControllerAdvice;
-import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.ResponseStatus;
-
-
-/**
- * Created by admin on 2017/5/8.
- */
-@ControllerAdvice
-public class AllExceptionHandler {
-
-    private Logger log = LoggerFactory.getLogger(AllExceptionHandler.class);
-
-
-    @ExceptionHandler(SystemException.class)
-    @ResponseStatus(value = HttpStatus.INTERNAL_SERVER_ERROR)
-    @ResponseBody
-    public ExAndErr err_500(SystemException ex) {
-
-        log.debug("----------------500--------------------");
-        return new ExAndErr(HttpStatus.INTERNAL_SERVER_ERROR.value(),ex.getMessage());
-    }
-
+//package aboo.controller;
+//
+//import aboo.entity.ExAndErr;
+//import org.omg.CORBA.SystemException;
+//import org.slf4j.Logger;
+//import org.slf4j.LoggerFactory;
+//import org.springframework.http.HttpStatus;
+//import org.springframework.web.bind.annotation.ControllerAdvice;
+//import org.springframework.web.bind.annotation.ExceptionHandler;
+//import org.springframework.web.bind.annotation.ResponseBody;
+//import org.springframework.web.bind.annotation.ResponseStatus;
+//
+//
+///**
+// * Created by admin on 2017/5/8.
+// */
+//@ControllerAdvice
+//public class AllExceptionHandler {
+//
+//    private Logger log = LoggerFactory.getLogger(AllExceptionHandler.class);
+//
+//
+//    @ExceptionHandler(SystemException.class)
+//    @ResponseStatus(value = HttpStatus.INTERNAL_SERVER_ERROR)
+//    @ResponseBody
+//    public ExAndErr err_500(SystemException ex) {
+//
+//        log.debug("----------------500--------------------");
+//        return new ExAndErr(HttpStatus.INTERNAL_SERVER_ERROR.value(),ex.getMessage());
+//    }
+//
 //    @ExceptionHandler(Exception.class)
 //    @ResponseStatus(value = HttpStatus.UNSUPPORTED_MEDIA_TYPE)
 //    @ResponseBody
@@ -42,7 +42,7 @@ public class AllExceptionHandler {
 //
 //        return new ExAndErr(code,msg);
 //    }
-
+//
 //    @ExceptionHandler(SystemException.class)
 //    @ResponseStatus(value = HttpStatus.METHOD_NOT_ALLOWED)
 //    @ResponseBody
@@ -56,5 +56,5 @@ public class AllExceptionHandler {
 //
 //        return new ExAndErr(code,msg);
 //    }
-
-}
+//
+//}

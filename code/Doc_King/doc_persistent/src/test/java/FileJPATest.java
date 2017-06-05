@@ -13,12 +13,22 @@ public class FileJPATest {
 
         ApplicationContext ctx = new ClassPathXmlApplicationContext("doc-persistent-application-context.xml");
         FileService fs = ctx.getBean("fileServiceImpl",FileService.class);
-//        System.out.println(fs.getClass());
-//        FileRepository fr = ctx.getBean("fileRepositoryImpl", FileRepository.class);
-//        fr.save(new FileInfo("all_logs",877689L,"doc",497676L));
 
+        System.out.println(fs.findByExtension("txt"));
+        FileRepository fr = ctx.getBean("fileRepositoryImpl", FileRepository.class);
 
-        fs.deleteByName("huige");
+        String originalName = "a.flsfd";
+        String extension=null;
+        String mime_type=null;
+        String[] s = originalName.split("\\.");
+        if(s.length >1){
+            extension = originalName.substring(originalName.lastIndexOf(".")+1);
+            mime_type = extension;
+        }
+        fs.saveInfo(originalName,extension,mime_type,System.currentTimeMillis(),8979);
+
+        System.out.println(s.length+","+extension+","+mime_type);
+
 
 
     }

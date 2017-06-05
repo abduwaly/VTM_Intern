@@ -13,7 +13,10 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
+ * {@link FileRepository}的实现类
  * Created by admin on 2017/5/16.
+ *
+ * @author Aboo
  */
 @Repository
 public class FileRepositoryImpl extends SimpleJpaRepository<FileInfo,Long> implements FileRepository{
@@ -26,12 +29,18 @@ public class FileRepositoryImpl extends SimpleJpaRepository<FileInfo,Long> imple
         this.em=em;
     }
 
+    /**
+     * @see FileRepository#deleteByName(String)
+     */
     @Override
     public void deleteByName(String filename) {
         em.createQuery("delete from FileInfo f where f.file_name='"+filename+"'").executeUpdate();
 
     }
 
+    /**
+     * @see FileRepository#findByFilename(String)
+     */
     @Override
     public FileInfo findByFilename(String filename) {
         Query q = em.createQuery("SELECT f FROM FileInfo f WHERE f.file_name='"+filename+"'");
@@ -41,24 +50,36 @@ public class FileRepositoryImpl extends SimpleJpaRepository<FileInfo,Long> imple
         return null;
     }
 
+    /**
+     * @see FileRepository#findByLastModified(long)
+     */
     @Override
     public List<FileInfo> findByLastModified(long lastmodtime) {
         Query q = em.createQuery("SELECT f FROM FileInfo f WHERE f.last_modified='"+lastmodtime+"'");
         return q.getResultList();
     }
 
+    /**
+     * @see FileRepository#findByExtension(String)
+     */
     @Override
-    public List<FileInfo> findByType(String type) {
-        Query q = em.createQuery("SELECT f FROM FileInfo f WHERE f.type='"+type+"'");
+    public List<FileInfo> findByExtension(String extension) {
+        Query q = em.createQuery("SELECT f FROM FileInfo f WHERE f.extension='"+extension+"'");
         return q.getResultList();
     }
 
+    /**
+     * @see FileRepository#findByLen(long)
+     */
     @Override
     public List<FileInfo> findByLen(long len) {
         Query q = em.createQuery("SELECT f FROM FileInfo f WHERE f.length='"+len+"'");
         return q.getResultList();
     }
 
+    /**
+     * @see FileRepository#existFile(String)
+     */
     @Override
     public boolean existFile(String filename) {
         Query q = em.createQuery("SELECT count(f) FROM FileInfo f WHERE f.file_name='"+filename+"'");
